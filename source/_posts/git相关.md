@@ -65,7 +65,7 @@ tags:
 
 * git merge 合并*（git pull = git fetch + git merge）*
 
-* git checkout 用于在不同的分支之间切换、恢复文件、创建新分支等操作。
+* git checkout <branch_name> 用于在不同的分支之间切换、恢复文件、创建新分支等操作。
 
 * * *
 
