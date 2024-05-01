@@ -1,0 +1,82 @@
+.container .list-group .list-group-item,
+.tag .list-group .list-group-item,
+.category .list-group .list-group-item,
+.thesisReading .list-group .list-group-item,
+.civilEngineeringBody .list-group .list-group-item{
+    justify-content: space-between;
+} 
+/**/
+
+/*修改文章页页边距*/
+.post-content {
+    box-sizing: border-box;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+/* 修改页面宽度 */
+/*
+.col-lg-8.nopadding-x-md .container.nopadding-x-md #board {
+    width: 120%;
+    left: -20%;
+}
+*/
+
+@media (max-width: 993px) {
+    .col-lg-8.nopadding-x-md .container.nopadding-x-md #board {
+        width: 100%;
+        left: 0%;
+    }
+}
+
+/* 解决高分屏下元素过宽的问题 */
+.post .row.nomargin-x {
+    max-width: 100rem;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+
+/* 设置表格样式 */
+table.myform tbody {
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+    white-space: nowrap;
+    width: 100%;
+}
+
+/* 表格边框样式：有内框 */
+table.myform tbody td {
+    /* 
+    border-left-width: 0;
+    border-right-width :0; */
+    border-color: var(--form-border-color);
+}
+
+table.myform tbody th {
+    border-color: var(--form-border-color);
+}
+
+table.myform tr:nth-child(2n+1) {
+    background-color: var(--form-color);
+}
+
+table.myform th:last-child {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* table.myform td:first-child {
+    border-left-width: 1px;
+  }
+  table.myform th:first-child {
+    border-left-width: 1px;
+  }
+  table.myform td:last-child {
+    border-right-width: 1px;
+  } */
+
+/* 
