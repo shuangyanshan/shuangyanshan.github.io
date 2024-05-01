@@ -233,6 +233,7 @@ font:
 # Specify the path of your custom js file, support list. The path is relative to the source directory, such as `/js/custom.js` corresponding to the directory `source/js/custom.js`
 custom_js:
 	- /theme_add/theme.js
+  - /scripts/code.js
 	#- //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/xiantiao.js # 动态黑色线条
 	- //cdn.jsdelivr.net/gh/bynotes/texiao/source/js/caidai.js # 动态彩带
 	#- //cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js  
@@ -242,6 +243,9 @@ custom_js:
 # The usage is the same as custom_js
 custom_css:
 	- //cdn.jsdelivr.net/gh/bynotes/texiao/source/css/shubiao.css# 鼠标指针
+  - /theme_add/theme.css
+  - https://lib.baomitu.com/font-awesome/6.1.2/css/all.min.css # Font Awesome
+  - /css/code-folding # 你的图标的旋转动画, 注意这里使用无后缀或者使用 css 后缀
 
 # 网页访问统计
 # Analysis of website visitors

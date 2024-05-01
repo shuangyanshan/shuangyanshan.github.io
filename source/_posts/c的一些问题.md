@@ -1,9 +1,7 @@
 ---
-title:c的一些问题
+title: c的一些问题
 date:2024-04-28 19:09:20
 description:集合。如果太长了就另开界面。
-index_img:
-tags:
 categories:
 - knowledge
 archive:
