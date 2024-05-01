@@ -16,25 +16,21 @@
   <meta name="author" content="Dsparks">
   <meta name="keywords" content="">
   
-    <meta name="description" content="1. 介绍——git是什么？ 首先，先让我们了解一下版本控制系统。">
+    <meta name="description" content="集合。如果太长了就另开界面。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git相关">
-<meta property="og:url" content="http://example.com/2024/03/26/git%E7%9B%B8%E5%85%B3/index.html">
+<meta property="og:title" content="c的一些问题">
+<meta property="og:url" content="http://example.com/2024/04/28/c%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="Double sparks">
-<meta property="og:description" content="1. 介绍——git是什么？ 首先，先让我们了解一下版本控制系统。">
+<meta property="og:description" content="集合。如果太长了就另开界面。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://raw.githubusercontent.com/shuangyanshan/image/main/img/%E7%89%88%E6%9C%AC%E5%BA%93%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/shuangyanshan/image/main/img/59c7c9213bc2433890fb62d9df7ee4fa%7Etplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp">
-<meta property="og:image" content="https://raw.githubusercontent.com/shuangyanshan/image/main/img/769cb13406f14e0e80c238648ae82802%7Etplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp">
-<meta property="article:published_time" content="2024-03-26T13:37:50.000Z">
-<meta property="article:modified_time" content="2024-05-01T02:09:39.193Z">
+<meta property="article:published_time" content="2024-04-28T11:09:20.000Z">
+<meta property="article:modified_time" content="2024-05-01T16:30:44.523Z">
 <meta property="article:author" content="Dsparks">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/shuangyanshan/image/main/img/%E7%89%88%E6%9C%AC%E5%BA%93%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png">
   
   
   
-  <title>git相关 - Double sparks</title>
+  <title>c的一些问题 - Double sparks</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -222,7 +218,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="git相关"></span>
+            <span id="subtitle" data-typed-text="c的一些问题"></span>
           
         </div>
 
@@ -233,8 +229,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-03-26 21:37" pubdate>
-          2024年3月26日 晚上
+        <time datetime="2024-04-28 19:09" pubdate>
+          2024年4月28日 晚上
         </time>
       </span>
     
@@ -245,7 +241,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.1k 字
+          137 字
         
       </span>
     
@@ -256,7 +252,7 @@
         
         
         
-          9 分钟
+          2 分钟
         
       </span>
     
@@ -293,74 +289,13 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">git相关</h1>
+            <h1 id="seo-header">c的一些问题</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="介绍git是什么">1. 介绍——git是什么？</h1>
-<p>首先，先让我们了解一下版本控制系统。</p>
-<span id="more"></span>
-<p>版本控制是一种记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统。依据参与人数，请让我们将其分为两大类：（个人）本地与可协作——</p>
-<p>本地，顾名思义，just在本地的版本库，修改方便，但若无备份，delete一点，一切白干。</p>
-<p>可协作，分为集中式与分布式。</p>
-<p>在集中式版本控制系统中，版本库集中放在中央服务器。由于修改者一般用的都是自己的电脑（非中央服务器），故工作时，首先要从中央服务器哪里得到最新的文件版本
-<em>（一般电脑上不会有所有文件的最新版本）</em>，然后再把修改推送到中央服务器。集中式版本控制系统必须联网才能工作，其交互速度受到网速的限制。</p>
-<p>分布式版本控制系统则没有中央服务器，每个人的电脑将存储一个完整的代码仓库（含完整的历史记录），故无须要求联网。当需要多人协作时，合作者之间需要将各自的修改推送给对方，从而起到多人共同修改文件的效果。</p>
-<p>而git，便是当前世界上最先进的分布式版本控制系统。</p>
-<p>版本控制系统的工作原理：</p>
-<p><img src="https://raw.githubusercontent.com/shuangyanshan/image/main/img/%E7%89%88%E6%9C%AC%E5%BA%93%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png" srcset="/img/loading.gif" lazyload></p>
-<p><em>Workspace：工作区，添加、编辑、修改文件等操作；</em></p>
-<p><em>Index / Stage：暂存区，暂存已修改的文件；</em></p>
-<p><em>Repository：仓库区（或本地仓库），将index中最终确定的文件保存到仓库成为一个新的版本；</em></p>
-<p><em>Remote：远程仓库</em></p>
-<blockquote>
-<p>图上的操作可以结合下方git常用操作理解</p>
-</blockquote>
-<h1 id="git-的相关操作">2.git 的相关操作</h1>
-<p><a target="_blank" rel="noopener" href="https://www.runoob.com/git/git-tutorial.html">菜鸟教程</a></p>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/30044692">非常说人话的git干货教程1</a></p>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/652125463">教程2（内容其实差不多）</a></p>
-<h2 id="git常用命令">git常用命令：</h2>
-<ul>
-<li><p>git init
-在已创建目录的前提下将该目录转变为git控制的存储库。</p></li>
-<li><p>git clone 在本地没有版本库时，将远程仓库复制到本地</p></li>
-<li><p>git pull
-在本地仓库已存在时，从远程仓库拉取（最新的）内容并将其合并到本地版本库中</p></li>
-<li><p>git add 添加文件到暂存区</p></li>
-<li><p>git commit 提交文件到本地仓库</p></li>
-<li><p>git push 将本地仓库的新的改变推送到远程仓库</p></li>
-<li><p>git fetch
-从远程版本库抓取最新的commits（内容），待用户在检查后决定是否将其合并到工作本机分支中</p></li>
-<li><p>git merge 合并<em>（git pull = git fetch + git
-merge）</em></p></li>
-<li><p>git checkout <branch_name>
-用于在不同的分支之间切换、恢复文件、创建新分支等操作。</branch_name></p></li>
-</ul>
-<hr>
-<h1 id="一些概念">3.一些概念</h1>
-<h2 id="git数据保存方式">git数据保存方式</h2>
-<p>git在每次进行存储操作时，保存的不是文件的变化或者差异，而是存储的那一时刻的文件快照（可以理解为文件副本，二进制格式存储）。
-而在我们的本地仓库中，有个.git的隐藏文件夹，这个是git仓库的重要部分，当我们git
-init或者git clone时就会存在，里面objects目录存储所有快照（文件内容）。
-当你提交一次更新（文件有修改），它就会对当时被修改的文件创建一个快照。</p>
-<p><img src="https://raw.githubusercontent.com/shuangyanshan/image/main/img/59c7c9213bc2433890fb62d9df7ee4fa%7Etplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp" srcset="/img/loading.gif" lazyload></p>
-<p>除此之外，git会保存一个提交对象（commit
-object），这个提交对象包含了</p>
-<ul>
-<li><p>一个指向暂存内容快照的指针</p></li>
-<li><p>作者的姓名和邮箱</p></li>
-<li><p>提交时输入的信息</p></li>
-<li><p>指向父对象的指针（首次提交操作产生的提交对象中没有父对象） <img src="https://raw.githubusercontent.com/shuangyanshan/image/main/img/769cb13406f14e0e80c238648ae82802%7Etplv-k3u1fbpfcp-zoom-in-crop-mark_1512_0_0_0.webp" srcset="/img/loading.gif" lazyload></p></li>
-</ul>
-<p>————T.B.C————</p>
-<h5 id="section"></h5>
-<h2 id="分支">分支</h2>
-<p>一种类似于树及树干形式的对代码所处位置的描述，是代码的可能性。不同分支上的代码可以合并（状态确定）。但合并时可能会出现一些问题（冲突）。</p>
-<p>本质上，分支是不同指针的指向的“迹”。<a target="_blank" rel="noopener" href="https://juejin.cn/post/7207263350488907813">git分支图文理解</a></p>
-<h2 id="版本冲突">版本冲突</h2>
-<p>版本冲突多出现在合并操作(合并远程仓库代码或者合并分支代码)中。如果出现版本冲突，需要具体分析出现冲突的代码区，手动进行代码合并，然后再进行提交。</p>
+                <h3 id="实现输入整型数据串后敲回车结束输入">实现输入整型数据串后敲回车结束输入</h3>
+<p>例子： <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    <span class="hljs-type">int</span>* p=<span class="hljs-literal">NULL</span>;<br>    <span class="hljs-type">int</span> n=<span class="hljs-number">1</span>;<br>    <br>    p = (<span class="hljs-type">int</span>*)<span class="hljs-built_in">realloc</span>(p,n*<span class="hljs-built_in">sizeof</span>(<span class="hljs-type">int</span>));<br>    <span class="hljs-keyword">if</span>(p==<span class="hljs-literal">NULL</span>)<br>        <span class="hljs-built_in">exit</span>(<span class="hljs-number">1</span>);<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>;;i++)&#123;<br>        p = (<span class="hljs-type">int</span>*)<span class="hljs-built_in">realloc</span>(p,(++n)*<span class="hljs-built_in">sizeof</span>(<span class="hljs-type">int</span>));<br>        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,p+i);<br>        <span class="hljs-keyword">if</span>(<span class="hljs-built_in">getchar</span>()==<span class="hljs-string">&#x27;\n&#x27;</span>)<span class="hljs-keyword">break</span>;<br>    &#125;<br>    <span class="hljs-comment">//可能是因为scanf在读取时会自动跳过空格读取下一个数+scanf读取完后顺位的空格or回车被getchar读取。综合下来实现了只要敲回车就能输入数据的功能。</span><br>    <br>    <span class="hljs-keyword">for</span>(i = <span class="hljs-number">0</span>;i&lt;n<span class="hljs-number">-1</span>;i++)  <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d  &quot;</span>,*(p+i));<br><br>&#125;<br></code></pre></td></tr></table></figure></p>
 
                 
               </div>
@@ -368,6 +303,27 @@ object），这个提交对象包含了</p>
             <hr/>
             <div>
               <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/knowledge/" class="category-chain-item">knowledge</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
   
   
 </div>
@@ -378,8 +334,8 @@ object），这个提交对象包含了</p>
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>git相关</div>
-      <div>http://example.com/2024/03/26/git相关/</div>
+      <div>c的一些问题</div>
+      <div>http://example.com/2024/04/28/c的一些问题/</div>
     </div>
     <div class="license-meta">
       
@@ -391,7 +347,7 @@ object），这个提交对象包含了</p>
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年3月26日</div>
+          <div>2024年4月28日</div>
         </div>
       
       
@@ -423,18 +379,12 @@ object），这个提交对象包含了</p>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/03/28/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E7%9B%B8%E5%85%B3/" title="电路原理相关">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">电路原理相关</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/03/25/text1/" title="text1">
-                        <span class="hidden-mobile">text1</span>
+                      <a href="/2024/04/27/arduino/" title="ardunio">
+                        <span class="hidden-mobile">ardunio</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

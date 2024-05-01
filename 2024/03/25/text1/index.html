@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/shuangyanshan/image/main/img/freecompress-%E3%80%8A-%E6%B0%B4-%E6%BC%AB-%E9%87%91-%E5%B1%B1-%E3%80%8B_100285573.jpeg">
 <meta property="article:published_time" content="2024-03-25T14:27:41.000Z">
-<meta property="article:modified_time" content="2024-05-01T02:09:39.193Z">
+<meta property="article:modified_time" content="2024-05-01T13:44:55.796Z">
 <meta property="article:author" content="Dsparks">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/shuangyanshan/image/main/img/freecompress-%E3%80%8A-%E6%B0%B4-%E6%BC%AB-%E9%87%91-%E5%B1%B1-%E3%80%8B_100285573.jpeg">
@@ -243,7 +243,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3 字
+          122 字
         
       </span>
     
@@ -254,7 +254,7 @@
         
         
         
-          1 分钟
+          2 分钟
         
       </span>
     
@@ -303,6 +303,17 @@
 <p><u>emmm</u></p>
 <p><em>hhh</em></p>
 <p><img src="https://raw.githubusercontent.com/shuangyanshan/image/main/img/942016582!figure_large.jpg" srcset="/img/loading.gif" lazyload></p>
+
+    <div class="fold">
+      <div class="fold-title fold-info 折叠块的标题 collapsed" data-toggle="collapse" href="#collapse-8f7bdefe" role="button" aria-expanded="false" aria-controls="collapse-8f7bdefe">
+        <div class="fold-arrow">▶</div>
+      </div>
+      <div class="fold-collapse collapse" id="collapse-8f7bdefe">
+        <div class="fold-content">
+          <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    <span class="hljs-type">int</span>* p=<span class="hljs-literal">NULL</span>;<br>    <span class="hljs-type">int</span> n=<span class="hljs-number">1</span>;<br>    <br>    p = (<span class="hljs-type">int</span>*)<span class="hljs-built_in">realloc</span>(p,n*<span class="hljs-built_in">sizeof</span>(<span class="hljs-type">int</span>));<br>    <span class="hljs-keyword">if</span>(p==<span class="hljs-literal">NULL</span>)<br>        <span class="hljs-built_in">exit</span>(<span class="hljs-number">1</span>);<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>;;i++)&#123;<br>        p = (<span class="hljs-type">int</span>*)<span class="hljs-built_in">realloc</span>(p,(++n)*<span class="hljs-built_in">sizeof</span>(<span class="hljs-type">int</span>));<br>        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>,p+i);<br>        <span class="hljs-keyword">if</span>(<span class="hljs-built_in">getchar</span>()==<span class="hljs-string">&#x27;\n&#x27;</span>)<span class="hljs-keyword">break</span>;<br>    &#125;<br>    <span class="hljs-comment">//可能是因为scanf在读取时会自动跳过空格读取下一个数+scanf读取完后顺位的空格or回车被getchar读取。综合下来实现了只要敲回车就能输入数据的功能。</span><br>    <br>    <span class="hljs-keyword">for</span>(i = <span class="hljs-number">0</span>;i&lt;n<span class="hljs-number">-1</span>;i++)  <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d  &quot;</span>,*(p+i));<br><br>&#125;<br></code></pre></td></tr></table></figure>
+        </div>
+      </div>
+    </div>
 <h1 id="latex">latex</h1>
 
                 
@@ -361,6 +372,23 @@
 
 
 
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2024/03/26/git%E7%9B%B8%E5%85%B3/" title="git相关">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">git相关</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
               
             </div>
 
