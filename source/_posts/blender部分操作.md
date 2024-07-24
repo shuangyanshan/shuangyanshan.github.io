@@ -6,7 +6,7 @@ index_img:
 tags: 
 categories: tools
 archive: 
-hide: 
+hide: true
 ---
 
 <p style="color:rgb(214,160,29)"><i>本博客在此知乎专栏[Blender操作笔记——基本操作](https://zhuanlan.zhihu.com/p/628501434)的基础上改动而成</i></p>

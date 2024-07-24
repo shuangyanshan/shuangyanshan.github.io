@@ -4,11 +4,11 @@ date: 2024-04-27 03:05:59
 description: 集合
 index_img:
 tags:
+hide: true
 categories: 
 - knowledge
 archive:
 ---
-
 
 # 把用户文件夹改了名之后发现arduino崩了/只能用管理员权限运行/老是在创建原用户文件夹怎么办？
 
